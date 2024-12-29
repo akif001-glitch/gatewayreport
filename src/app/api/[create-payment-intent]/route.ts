@@ -18,7 +18,7 @@ export async function GET(req: NextRequest) {
   }
 
   const payoneerBaseUrl = 'https://www.payoneer.com/pay/';
-  const payoneerAccountId = 'dummy-account-id'; // Replace this with your real account ID.
+  const payoneerAccountId = '4022641167412'; // Replace this with your real account ID.
 
   // Generate the Payoneer link
   const payoneerLink = `${payoneerBaseUrl}?account_id=${payoneerAccountId}&amount=${amount}&currency=${currency}&payment_method=${paymentMethod}`;
